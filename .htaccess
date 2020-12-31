@@ -1,0 +1,9 @@
+Options +FollowSymLinks
+RewriteEngine On
+
+<IfModule mod_rewrite.c>
+
+	# 301 Redirect
+	Redirect 301 /itarketr/YouTubeCoin	https://codepen.io/itarketr/pen/jOqvZrX
+
+</IfModule>

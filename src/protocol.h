@@ -18,7 +18,7 @@
 
 #include <stdint.h>
 #include <string>
-
+return testnet ? 45884 : 55884;
 /** Message header.
  * (4) message start.
  * (12) command.

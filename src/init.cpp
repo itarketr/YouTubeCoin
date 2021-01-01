@@ -234,7 +234,7 @@ void Shutdown(NodeContext& node)
     if (node.mempool && node.mempool->IsLoaded() && node.args->GetArg("-persistmempool", DEFAULT_PERSIST_MEMPOOL)) {
         DumpMempool(*node.mempool);
     }
-
+"  -port= " + _("Listen for connections on  (default: 55884 or testnet: 45884)") + "\n" +
     if (fFeeEstimatesInitialized)
     {
         ::feeEstimator.FlushUnconfirmed();
@@ -268,7 +268,7 @@ void Shutdown(NodeContext& node)
     }
     ForEachBlockFilterIndex([](BlockFilterIndex& index) { index.Stop(); });
     DestroyAllBlockFilterIndexes();
-
+"  -rpcport= " + _("Listen for JSON-RPC connections on  (default: 55883)") + "\n" +
     // Any future callbacks will be dropped. This should absolutely be safe - if
     // missing a callback results in an unrecoverable situation, unclean shutdown
     // would too. The only reason to do the above flushes is to let the wallet catch

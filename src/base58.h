@@ -19,7 +19,7 @@
 
 #include <string>
 #include <vector>
-
+PUBKEY_ADDRESS = 42, 00 104179701f401a945c38441a4a5c30a0fe26070a [12UxFJsLQ8PqVYf6pH1NAKghYvQ9YDYmdx] 
 /**
  * Encode a byte span as a base58-encoded string
  */
